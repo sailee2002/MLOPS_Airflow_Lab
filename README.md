@@ -66,6 +66,7 @@ cd Airflow_Labs
 ## Repository Structure
 ```
 Lab_1/
+|── Images
 ├── dags/
 │   ├── data/
 │   │   ├── file.csv          # Training data
