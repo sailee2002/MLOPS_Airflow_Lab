@@ -137,6 +137,11 @@ docker compose down
 - Wait for: `"GET /health HTTP/1.1" 200` (step 6)
 - View DAG results in UI → Airflow_Lab1 → Graph → load_model_task → Logs
 
+  <img width="1855" height="556" alt="image" src="https://github.com/user-attachments/assets/b057105e-f321-4a47-aba4-3a6de9d852ff" />
+  <img width="1107" height="116" alt="image" src="https://github.com/user-attachments/assets/93c7c7a9-55d6-42f9-94ac-25e2db742f7b" />
+
+
+
 ### Quick Verification
 ```bash
 # Check if services are running
