@@ -86,9 +86,10 @@ Lab_1/
 ├── .env
 ├── docker-compose.yaml
 
+```
 
 ## Workflow Pipeline
-
+```
 The DAG (`Airflow_Lab1`) consists of **5 tasks** executed sequentially:
 
 1. **load_data_task** - Loads data from CSV file
