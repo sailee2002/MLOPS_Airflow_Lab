@@ -5,8 +5,6 @@
 ## Repository Overview
 This repository contains lab assignments for the MLOps course focused on Apache Airflow workflow orchestration. Each lab demonstrates practical implementation of ML pipelines using containerized environments.
 
-## Labs
-
 ### Lab 1: ML Workflow Automation with K-Means Clustering
 A complete machine learning pipeline using Apache Airflow and Docker that automates data clustering workflow with an exploratory data analysis step.
 
@@ -99,9 +97,9 @@ The DAG (`Airflow_Lab1`) consists of **5 tasks** executed sequentially:
 5. **load_model_task** - Loads model and determines optimal clusters using elbow method
 
 ### Pipeline Flow Diagram
-```
-load_data → perform_eda → data_preprocessing → build_save_model → load_mode
 
+load_data → perform_eda → data_preprocessing → build_save_model → load_mode
+```
 ## Learning Outcomes
 - Understanding Airflow DAG architecture
 - Implementing ML pipelines with task dependencies
