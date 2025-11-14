@@ -100,6 +100,51 @@ The DAG (`Airflow_Lab1`) consists of **5 tasks** executed sequentially:
 
 load_data → perform_eda → data_preprocessing → build_save_model → load_mode
 ```
+
+
+
+## How to Run
+
+### Quick Start Commands
+```bash
+# 1. Navigate to project directory
+cd Lab_1
+
+# 2. Download docker-compose.yaml
+curl -o docker-compose.yaml https://airflow.apache.org/docs/apache-airflow/2.9.2/docker-compose.yaml
+
+# 3. Create directories
+mkdir logs plugins config
+
+# 4. Create .env file (Windows CMD)
+echo AIRFLOW_UID=50000 > .env
+
+# 5. Initialize Airflow database
+docker compose up airflow-init
+
+# 6. Start Airflow
+docker compose up
+
+# 7. Access UI at http://localhost:8080
+# Login: airflow2 / airflow2
+
+# 8. Stop Airflow (when done)
+docker compose down
+```
+
+### Expected Output
+- Wait for: `airflow-init-1 exited with code 0` (step 5)
+- Wait for: `"GET /health HTTP/1.1" 200` (step 6)
+- View DAG results in UI → Airflow_Lab1 → Graph → load_model_task → Logs
+
+### Quick Verification
+```bash
+# Check if services are running
+docker compose ps
+
+# View logs
+docker compose logs -f airflow-webserver
+```
 ## Learning Outcomes
 - Understanding Airflow DAG architecture
 - Implementing ML pipelines with task dependencies
