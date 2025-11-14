@@ -1,0 +1,31 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Airflow
+logs/
+*.log
+airflow-webserver.pid
+airflow.db
+airflow.cfg
+standalone_admin_password.txt
+
+# Docker
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Airflow specific
+dags/__pycache__/
+dags/**/__pycache__/
